@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Love, Will You Marry Me?</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f5f5f5;
+        }
+
+        #proposal {
+            margin: 50px auto;
+            max-width: 600px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #fff;
+        }
+
+        h1 {
+            color: #FF1493;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        #loveLetter {
+            display: none;
+            margin-top: 30px;
+            font-size: 18px;
+            line-height: 1.6;
+            text-align: left;
+        }
+
+        #btnShowLetter {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #FF1493;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="proposal">
+        <h1>My Love, Will You Be My Forever..??</h1>
+        <p>My Sweet Heart..</p>
+        <p>Listen Carefully Jaan I Know That I Have Made Lots of Mistakes And am Feeling Very Guilty For That All Mistakes. My Past Was Very Bad I Know But I Want To Make a New One With You Only You And Me And Our Love......</p>
+        <p>So My Drearest Jaan Will You Make Me The Happiest Person In The World.</p>
+        <button id="btnShowLetter" onclick="showLoveLetter()">Read My Love Massage</button>
+        <div id="loveLetter">
+            <p>My Sweet Heart...</p>
+            <p>Do You Know That My Day Starts With You.  I Woke Up in The Morning and Saw Your Photo and Then Saw Your Message.Snapping You While Getting Ready and Going To The Office, Going to The Office and Waiting For Your Message, Leaving All My Work Aside and Replying To Your Message As Soon As Your Message Comes. My Heart Knows How Much  Think About You 24*7 My Mind Thinking Only and Only About You... Because I Love You So Much❤️</p>
+            <p>Am Only and Only Yours. I Entrust Myself To You.....</p>
+            <p>I am not afraid of anyone.  Now only and only I am yours, your full right over me. Stay with me. ...I need you with me.....I Love You More Than Anything You Are My Happiness You Are My Everything Yaar I Can't Live Without You  Because You Are My Heart Beats❤️...
+            <p>I want to start new happily relation with you.....??</p>
+            <p>Do you also want  begin with menewly relation  ....???</p>
+            <p>Your Love Apki Kutti🤭🤭</p>
+        </div>
+    </div>
+
+    <script>
+        function showLoveLetter() {
+            var loveLetter = document.getElementById('loveLetter');
+            var btnShowLetter = document.getElementById('btnShowLetter');
+
+            if (loveLetter.style.display === 'none') {
+                loveLetter.style.display = 'block';
+                btnShowLetter.innerText = 'Hide my love Massage';
+            } else {
+                loveLetter.style.display = 'none';
+                btnShowLetter.innerText = 'Read My Love Massage';
+            }
+        }
+    </script>
+</body>
+</html>
